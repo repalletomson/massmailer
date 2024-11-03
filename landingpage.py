@@ -765,10 +765,6 @@ def main():
     # Initialize session state variables
     if "page" not in st.session_state:
         st.session_state.page = "Login"
-    if "authenticated" not in st.session_state:
-        st.session_state["authenticated"] = False
-    if "show_register" not in st.session_state:
-        st.session_state["show_register"] = False
     if "user_choice" not in st.session_state:
         st.session_state.user_choice = None
     elif st.session_state.page == "Login":
